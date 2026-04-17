@@ -1,5 +1,9 @@
-let hour = 18
+let hour = 10
 
-let time = (hour<=11) ? 'good morning' : 'good afternoon' (hour > 12 ==16) ? 'good afternoon' : 'good morning' (hour => 17) ? 'good evening': 'good morning'
+let time = (hour >= 0 && hour <= 11) 
+    ? "Good morning"
+    : (hour >= 12 && hour <= 16) 
+        ? "Good afternoon"
+        : "Good evening";
 
 console.log(time);
